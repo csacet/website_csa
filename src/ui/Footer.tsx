@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <div className="bg-black text-white h-fit p-8 footer">
+    <div className="font-primary bg-black text-white h-fit p-8 footer">
       <div className="flex flex-wrap justify-between items-center mx-auto my-0 p-4">
         <div className="flex flex-col items-start text-left w-full md:w-1/3 mb-4 ">
           <div className="w-[90%] text-left mb-4 flex">

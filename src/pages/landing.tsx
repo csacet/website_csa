@@ -1,16 +1,16 @@
-import Navbar from '../ui/navbar';
+// import Navbar from '../ui/navbar';
 import "../app/globals.css";
 import Image from 'next/image';
-import sampleDepartmentImage from '../app/assets/images/sampleDepartmentImage.svg';
+// import sampleDepartmentImage from '../app/assets/images/sampleDepartmentImage.svg';
 import landingImg1 from '../app/assets/images/landingImg1.svg';
 import landingImg2 from '../app/assets/images/landingImg2.svg';
-import Footer from '../ui/Footer';
+// import Footer from '../ui/Footer';
 
 export default function landing() {
     return (
 
-        <div>
-            <Navbar />
+        <div className='font-primary'>
+            {/* <Navbar /> */}
             {/* <div className='mx-[2rem] mt-[1.125rem] h-fit w-full relative text-center text-white brightness-50'>
                 <Image src={sampleDepartmentImage} alt='CS Department' className=' ' />
                 <div className='text-[5rem] absolute m-auto font-secondary items-center left-1/2 top-1/2'>CS ASSOCIATION</div>
@@ -37,7 +37,7 @@ export default function landing() {
                 </div>
                 <Image src={landingImg2} alt='Department of Computer Science' className=''/>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
