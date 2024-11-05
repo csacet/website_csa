@@ -1,7 +1,7 @@
 import Navbar from "../ui/navbar";
 import "../app/globals.css";
 import Image from "next/image";
-import sampleDepartmentImage from "../app/assets/images/sampleDepartmentImage.svg";
+// import sampleDepartmentImage from "../app/assets/images/sampleDepartmentImage.svg";
 import landingImg1 from "../app/assets/images/landingImg1.svg";
 import landingImg2 from "../app/assets/images/landingImg2.svg";
 import Footer from "../ui/Footer";

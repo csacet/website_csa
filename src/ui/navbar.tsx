@@ -1,6 +1,7 @@
 "use client";
 import csAssociationLogo from '../app/assets/images/csLogo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -9,26 +10,43 @@ export default function Navbar() {
     return (
         <div>
             <div className="font-secondary mx-[2rem] flex flex-row bg-navbg text-white text-xl rounded-b-[1.25rem] h-[6.375rem] items-center justify-between px-7">
-
                 {/* Logo */}
                 <div className="lg:hidden ">
-                    <Image src={csAssociationLogo} alt='associationlogo' className='h-[4.0625rem]' />
+                    <Link href="/">
+                        <Image src={csAssociationLogo} alt="associationlogo" className="h-[4.0625rem] cursor-pointer" />
+                    </Link>
                 </div>
 
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex flex-row space-x-[5rem] items-center pl-16">
-                    <div>Achievements</div>
-                    <div>Events</div>
-                    <div>Newsletter</div>
+                    <Link href="/achievements">
+                        <div className="cursor-pointer">Achievements</div>
+                    </Link>
+                    <Link href="/events">
+                        <div className="cursor-pointer">Events</div>
+                    </Link>
+                    <Link href="/newsletter">
+                        <div className="cursor-pointer">Newsletter</div>
+                    </Link>
                 </div>
-                {/* Logo */}
+
+                {/* Logo for desktop */}
                 <div className="hidden lg:flex ml-[2rem]">
-                    <Image src={csAssociationLogo} alt='associationlogo' className='h-[4.0625rem]' />
+                    <Link href="/">
+                        <Image src={csAssociationLogo} alt="associationlogo" className="h-[4.0625rem] cursor-pointer" />
+                    </Link>
                 </div>
+
                 <div className="hidden lg:flex flex-row space-x-[5rem] items-center pr-16">
-                    <div>Dotslash</div>
-                    <div>CS-Cup</div>
-                    <div>Placements</div>
+                    <Link href="/dotslash">
+                        <div className="cursor-pointer">Dotslash</div>
+                    </Link>
+                    <Link href="/cscup">
+                        <div className="cursor-pointer">CS-Cup</div>
+                    </Link>
+                    <Link href="/placements">
+                        <div className="cursor-pointer">Placements</div>
+                    </Link>
                 </div>
 
                 {/* Hamburger Icon */}
@@ -44,12 +62,24 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {isOpen && (
                 <div className="lg:hidden bg-navbg text-white text-xl p-4 space-y-4 rounded-lg mx-10">
-                    <div>Achievements</div>
-                    <div>Events</div>
-                    <div>Newsletter</div>
-                    <div>Dotslash</div>
-                    <div>CS-Cup</div>
-                    <div>Placements</div>
+                    <Link href="/achievements">
+                        <div className="hover:underline cursor-pointer">Achievements</div>
+                    </Link>
+                    <Link href="/events">
+                        <div className=" hover:underline cursor-pointer">Events</div>
+                    </Link>
+                    <Link href="/newsletter">
+                        <div className="hover:underline cursor-pointer">Newsletter</div>
+                    </Link>
+                    <Link href="/dotslash">
+                        <div className="hover:underline cursor-pointer">Dotslash</div>
+                    </Link>
+                    <Link href="/cscup">
+                        <div className="hover:underline cursor-pointer">CS-Cup</div>
+                    </Link>
+                    <Link href="/placements">
+                        <div className="hover:underline cursor-pointer">Placements</div>
+                    </Link>
                 </div>
             )}
         </div>
