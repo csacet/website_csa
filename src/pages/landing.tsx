@@ -6,6 +6,15 @@ import landingImg2 from '../app/assets/images/landingImg2.svg';
 export default function Landing() {
     return (
         <div className="font-primary">
+            {/* Full-width image with centered text overlay */}
+            <div className="my-3 relative w-3/4 mx-auto"> {/* Added mx-auto to center */}
+                <Image src={landingImg2} alt="Dept" className="w-full" />
+                <div className="absolute flex-col inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity duration-300">
+                    <div className="text-white text-5xl font-secondary uppercase">CS Association</div>
+                    <div className="text-white text-xl font-secondary">Department of Computer Science</div>
+                </div>
+            </div>
+
             {/* Section 1 */}
             <div className="mx-4 lg:mx-[2.03125rem] mt-[1.875rem] flex flex-col lg:flex-row bg-[#F4F4F4] px-6 lg:px-[4.875rem] py-8 lg:py-[3.3125rem] rounded-[1.25rem] space-y-8 lg:space-y-0 lg:space-x-8">
                 <Image src={landingImg1} alt="Department of Computer Science" className="w-full lg:w-auto" />
