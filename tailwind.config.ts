@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         primary: ['Bricolage Grotesque'],
-        secondary: ['Bruno Ace SC'],
+        secondary: ['Bruno Ace SC', 'sans-serif'],
       },
       fontSize: {
         base: ['20px', '24px'], // 20px font with 24px line height

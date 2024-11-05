@@ -11,7 +11,7 @@ export default function Landing() {
                 <Image src={landingImg2} alt="Dept" className="w-full" />
                 <div className="absolute flex-col inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity duration-300">
                     <div className="text-white text-5xl font-secondary uppercase">CS Association</div>
-                    <div className="text-white text-xl font-secondary">Department of Computer Science</div>
+                    <div className="text-white text-xl font-primary">Department of Computer Science</div>
                 </div>
             </div>
 
