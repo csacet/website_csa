@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Bricolage Grotesque', 'sans-serif'],
-        secondary: ['Bruno Ace SC', 'cursive'],
+        primary: ['Bricolage Grotesque'],
+        secondary: ['Bruno Ace SC', 'sans-serif'],
       },
       fontSize: {
         base: ['20px', '24px'], // 20px font with 24px line height
@@ -19,6 +19,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        navbg: "#1A1A1A",
       },
     },
   },

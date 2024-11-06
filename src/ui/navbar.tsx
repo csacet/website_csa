@@ -1,5 +1,8 @@
+"use client";
 import csAssociationLogo from '../app/assets/images/csLogo.svg';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -31,15 +34,29 @@ export default function Navbar() {
             {!isSmallScreen && (
                 <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-row ml-[7.018125rem] space-x-[5rem]">
-                        <div className='hover:text-[#FFE53B]'>Achievements</div>
-                        <div className='hover:text-[#FFE53B]'>Events</div>
-                        <div className='hover:text-[#FFE53B]'>Newsletter</div>
+                        <Link href="/achievements">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">Achievements</div>
+                        </Link>
+                        <Link href="/events">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">Events</div>
+                        </Link>
+                        <Link href="/newsletter">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">Newsletter</div>
+                        </Link>
                     </div>
-                    <Image src={csAssociationLogo} alt="associationlogo" className="h-[4.0625rem]" />
+                    <Link href="/">
+                        <Image src={csAssociationLogo} alt="associationlogo" className="h-[4.0625rem]" />
+                    </Link>
                     <div className="flex flex-row mr-[7.018125rem] space-x-[5rem]">
-                        <div className='hover:text-[#FFE53B]'>Dotslash</div>
-                        <div className='hover:text-[#FFE53B]'>CS-Cup</div>
-                        <div className='hover:text-[#FFE53B]'>Placements</div>
+                        <Link href="/dotslash">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">Dotslash</div>
+                        </Link>
+                        <Link href="/cscup">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">CS-Cup</div>
+                        </Link>
+                        <Link href="/placements">
+                            <div className="cursor-pointer hover:text-[#FFE53B]">Placements</div>
+                        </Link>
                     </div>
                 </div>
             )}
@@ -47,7 +64,9 @@ export default function Navbar() {
             {isSmallScreen && (
                 <div className="flex flex-row justify-between w-full">
                     <div className="flex flex-row">
-                        <Image src={csAssociationLogo} alt="associationlogo" className="h-[3rem]" />
+                        <Link href="/">
+                            <Image src={csAssociationLogo} alt="associationlogo" className="h-[3rem]" />
+                        </Link>
                         <div className="text-lg text-center my-auto">Cs Association</div>
                     </div>
                     <div onClick={toggleMenu} className="mr-0 h-[2.5rem] w-[2.5rem] flex flex-col justify-center items-center cursor-pointer">
@@ -59,15 +78,30 @@ export default function Navbar() {
             )}
             
             {isSmallScreen && menuActive && (
-                <div className="bg-[#1A1A1A] rounded-[1.25rem] text-white flex flex-col space-y-3 z-50 p-4 ">
-                    <div className='ml-0'>Achievements</div>
-                    <div className='ml-0'>Events</div>
-                    <div className='ml-0'>Newsletter</div>
-                    <div className='ml-0'>Dotslash</div>
-                    <div className='ml-0'>CS-Cup</div>
-                    <div className='ml-0'>Placements</div>
-                </div>
+                <div className="bg-[#1A1A1A] rounded-[1.25rem] text-white flex flex-col space-y-3 z-50 mt-6">
+
+                    <Link href="/achievements">
+                        <div className="hover:underline cursor-pointer">Achievements</div>
+                    </Link>
+                    <Link href="/events">
+                        <div className=" hover:underline cursor-pointer">Events</div>
+                    </Link>
+                    <Link href="/newsletter">
+                        <div className="hover:underline cursor-pointer">Newsletter</div>
+                    </Link>
+                    <Link href="/dotslash">
+                        <div className="hover:underline cursor-pointer">Dotslash</div>
+                    </Link>
+                    <Link href="/cscup">
+                        <div className="hover:underline cursor-pointer">CS-Cup</div>
+                    </Link>
+                    <Link href="/placements">
+                        <div className="hover:underline cursor-pointer">Placements</div>
+                    </Link>
+                    </div>
             )}
         </div>
     );
 }
+
+                

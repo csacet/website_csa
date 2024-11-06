@@ -1,3 +1,4 @@
+"use client";
 import Navbar from '../ui/navbar';
 import "../app/globals.css";
 import Image from 'next/image';
