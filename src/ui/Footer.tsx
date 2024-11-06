@@ -42,10 +42,10 @@ function Footer() {
           <div className="mb-3">
             Materials
           </div>
-          <a href="../src/assets/footerlinks/finalyearprojecttitles.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
+          <a href="./finalyearprojecttitles.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
             Final Year Project Titles
           </a>
-          <a href="../src/assets/footerlinks/listofprojects.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
+          <a href="/listofprojects.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
             List of Final Year Projects
           </a>
           
