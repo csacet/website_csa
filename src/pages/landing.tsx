@@ -1,24 +1,29 @@
 "use client";
-import Navbar from '../ui/navbar';
 import "../app/globals.css";
 import Image from 'next/image';
 import sampleDepartmentImage from '../app/assets/images/sampleDepartmentImage.svg';
 import landingImg1 from '../app/assets/images/landingImg1.svg';
 import landingImg2 from '../app/assets/images/landingImg2.svg';
-import Footer from '../ui/Footer';
 import { useState, useEffect } from 'react';
 
 export default function Landing() {
+
+
     const [currentImage, setCurrentImage] = useState(0);
     const images = [sampleDepartmentImage, landingImg1];
 
     useEffect(() => {
         const imageSwitchInterval = setInterval(() => {
         setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
-        }, 500);
+        }, 2000);
 
         return () => clearInterval(imageSwitchInterval);
     }, []);
+
+    const submitQUery = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        alert("Query submitted!");
+    };
 
     return (
         <div className="overflow-x-hidden">
@@ -39,7 +44,7 @@ export default function Landing() {
                     Contact Us
                 </button>
                 </div>
-                <div className="absolute bottom-5 left-5  md:bottom-5 md:right-9 text-lg z-10">
+                <div className="absolute bottom-5 left-5  md:bottom-5 md:right-9 md:left-auto text-lg z-10">
                 College of Engineering Trivandrum
                 </div>
             </div>
@@ -62,18 +67,18 @@ export default function Landing() {
                 <Image src={landingImg2} alt="Department of Computer Science" className="rounded-md" />
             </div>
 
-            <div className="flex flex-col my-[1.875rem] items-center justify-center mx-[2.03125rem] bg-[#2C2C2C]  rounded-lg shadow-lg px-min">
+            <div className="flex flex-col my-[1.875rem] items-center justify-between mx-[2.03125rem] bg-[#2C2C2C]  rounded-lg shadow-lg px-min">
                 <div className='px-[2.6875rem]'>
-                <h2 className="text-[3rem] font-bold text-white mb-4 mt-[2.625rem]">Do you have any queries?</h2>
-                <form className="flex w-full mb-[4.625rem] tems-center  mx-auto">
+                <div className="text-[2rem] md:text-[3rem] font-bold text-white mb-4 mt-[2.625rem]">Do you have any queries?</div>
+                <form className="flex md:flex-row flex-col space-y-3 md:space-y-0 w-full mb-[4.625rem] items-center mx-auto" onSubmit={submitQUery}>
                     <input
                         type="text"
                         placeholder="Write here..."
-                        className="px-4 py-2 mx-auto text-[#6A6A6A] rounded-[0.625rem] bg-[#424242] mr-4 w-[27.6875rem] focus:outline-none"
+                        className="px-4 py-2 mx-auto text-white placeholder:text-[#6A6A6A] rounded-[0.625rem] bg-[#424242]  md:mr-4 w-fit md:w-[27.6875rem] focus:outline-none"
                     />
                     <button
                         type="submit"
-                        className="px-[2.1875rem] py-[0.625rem] font-medium text-white bg-transparent border border-white rounded-[0.625rem] hover:bg-white hover:text-gray-800 transition duration-200"
+                        className="px-[2.1875rem] py-[0.625rem] font-medium text-white bg-transparent border  border-white rounded-[0.625rem] hover:bg-white hover:text-gray-800 transition duration-300"
                     >
                         Send
                     </button>
