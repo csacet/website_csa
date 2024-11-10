@@ -1,10 +1,10 @@
 "use client";
 import "../app/globals.css";
 import Image from 'next/image';
-import sampleDepartmentImage from '../app/assets/images/mainpage.jpg';
-import landingImg1 from '../app/assets/images/landingImg1.svg';
-import landingImg2 from '../app/assets/images/landingImg2.svg';
-import landingImg3 from "../app/assets/images/mainpage2.jpg";
+import sampleDepartmentImage from '../app/assets/images/landingImg1.svg';
+import landingImg1 from '../app/assets/images/landingImg2.svg';
+import landingImg2 from '../app/assets/images/landingImg3.jpg';
+import landingImg3 from "../app/assets/images/landingImg4.jpg";
 import { useState, useEffect } from 'react';
 import ImageCarousel from "@/ui/ImageCarousel";
 type landingPageContent = {
@@ -74,7 +74,7 @@ type landingPageContent = {
             </div>
             <div className="mx-[2.03125rem] mt-[1.875rem] flex flex-col lg:flex-row bg-[#F4F4F4] px-7 md:px-15 py-[2rem] md:py-[3.3125rem] rounded-[1.25rem] space-y-4 md:space-x-6 items-center">
             <h2  className="block lg:hidden font-bold  text-2xl sm:text-4xl  pb-5 ">Department of Computer Science </h2>
-                <Image src={landingImg1} alt="Department of Computer Science" className="rounded-md w-full md:w-2/3 lg:w-1/2 xl:w-full " />
+                <Image src={landingImg2} alt="Department of Computer Science" className="rounded-md w-full md:w-2/3 lg:w-1/2 xl:w-full " />
                 <div className="flex flex-col md:px-16 xl:px-20 items-center md:items-start">
                     <h2  className="hidden lg:block font-bold  text-2xl md:text-4xl  xl:text-5xl">Department of <br /> Computer Science</h2>
                     <p className="px-5 md:px-0 font-normal md:text-lg xl:text-xl mt-[2.5rem]">

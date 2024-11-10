@@ -7,7 +7,7 @@ import landingImg2 from "../app/assets/images/dot2.jpeg";
 import landingImg3 from "../app/assets/images/dot3.jpeg";
 import landingImg4 from "../app/assets/images/dot4.jpeg";
 import landingImg5 from "../app/assets/images/dot5.jpeg";
-import landingImg from "../app/assets/images/Group 17.png";
+import landingImg from "../app/assets/images/dotmain.png";
 
 import landingImg6 from "../app/assets/images/dot6.jpeg";
 import landingImg7 from "../app/assets/images/dot7.jpeg";
