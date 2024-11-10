@@ -60,7 +60,7 @@ export default function Dotslash() {
   {data.dotslash_one}
   
   <p className="leading-relaxed mt-4 text-center">
-  Visit <a href="https://www.dotslashcet.tech/" className="underline font-primary">Dotslash</a> for more
+  Visit <a href="https://www.dotslashcet.tech/" className="underline font-primary font-bold">Dotslash</a> for more
 </p>
 
 </div>

@@ -22,16 +22,16 @@ import { useState, useEffect } from "react";
 
 import Footer from "../ui/Footer";
 type landingPageContent = {
-  dotslash_one: string;
-  dotslash_two: string;
-  dotslash_three: string;
+  cscup_one: string;
+  cscup_two: string;
+  cscup_three: string;
 };
 
 export default function CsCup() {
   const [data, setData] = useState<landingPageContent>({
-    dotslash_one: "",
-    dotslash_two: "",
-    dotslash_three: "",
+    cscup_one: "",
+    cscup_two: "",
+    cscup_three: "",
   });
 
   useEffect(() => {
@@ -56,11 +56,11 @@ export default function CsCup() {
 
   {/* Centered text content below the image */}
   <div className="flex flex-col text-center max-w-6xl">
-  <div className="text-sm text-justify px-3 md:text-xl mt-[2.5rem] ">
-  {data.dotslash_one}
+  <div className=" text-sm sm:text-lg  text-justify px-5 md:text-xl mt-[2.5rem]">
+  {data.cscup_one}
   
   <p className="leading-relaxed mt-4 text-center">
-  Visit <a href="https://www.dotslashcet.tech/" className="underline font-primary">Dotslash</a> for more
+  Visit <a href="https://cs-cup-points-table.vercel.app/" className="underline font-primary font-bold">CS-Cup</a> for more
 </p>
 
 </div>
@@ -72,9 +72,9 @@ export default function CsCup() {
             <h2  className="block lg:hidden font-bold  text-2xl sm:text-4xl  pb-5 ">Dotslash 2023-24 </h2>
                 <Image src={landingImg1} alt="Department of Computer Science" className="rounded-md w-full lg:w-1/2 " />
                 <div className="flex flex-col px-0 xl:px-20 items-center md:items-start">
-                    <h2  className="hidden lg:block font-bold  text-2xl md:text-4xl  xl:text-5xl">Dotslash 2023-24 </h2>
-                    <p className=" sm:px-5 md:px-0 font-normal md:text-lg xl:text-xl mt-[2.5rem]">
-                    {data.dotslash_two}
+                    <h2  className="hidden lg:block font-bold  text-2xl md:text-4xl  xl:text-5xl">CS Cup 2023-24 </h2>
+                    <p className="  sm:px-5 md:px-0 font-normal md:text-lg xl:text-xl mt-[2.5rem]">
+                    {data.cscup_two}
                     </p>
                 </div>
             </div>
@@ -84,7 +84,7 @@ export default function CsCup() {
                 <div className="flex flex-col md:px-0 xl:px-20 items-center md:items-start">
                     
                     <p className="sm:px-5 md:px-0 font-normal md:text-lg xl:text-xl mt-[2.5rem]">
-                    {data.dotslash_three}
+                    {data.cscup_three}
                     </p>
                 </div>
                 <Image src={landingImg2} alt="College of Engineering Trivandrum" className="hidden lg:block rounded-md w-full lg:w-1/2 " />
