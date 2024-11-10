@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Bricolage Grotesque'],
+        primary: ['Bricolage Grotesque', 'sans-serif'],
         secondary: ['Bruno Ace SC', 'sans-serif'],
       },
       fontSize: {

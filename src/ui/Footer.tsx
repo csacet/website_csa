@@ -8,12 +8,12 @@ function Footer() {
   return (
     <div className="font-primary bg-black text-white h-fit p-8 footer">
       <div className="flex flex-wrap justify-between items-center mx-auto my-0 p-4">
-        <div className="flex flex-col items-start text-left w-full md:w-1/3 mb-4 ">
+        <div className="flex flex-col items-start text-left  mb-4 ">
           <div className="w-[90%] text-left mb-4 flex">
             <Image className="h-7 w-7 m-auto" src={cetlogo} alt="Logo" />
             <p className="text-base m-4 footer-text">College of Engineering Trivandrum</p>
           </div>
-          <div className="flex text-left mb-4 space-x-5">
+          <div className="items-center flex text-left mb-4 space-x-7">
             <a
               href="https://www.instagram.com/csa_cet/"
               className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white max-w-6"
@@ -38,19 +38,19 @@ function Footer() {
             <p>@ 2024 CSA</p>
           </div>
         </div>
-        <div className="flex flex-col w-full sm:w-1/2 md:w-1/3 mb-4">
+        <div className=" flex flex-col sm:w-1/4  mb-4">
           <div className="mb-3">
             Materials
           </div>
-          <a href="../src/assets/projects/finalyearprojecttitles.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
+          <a href="./finalyearprojecttitles.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
             Final Year Project Titles
           </a>
-          <a href="../src/assets/projects/listofprojects.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
+          <a href="/listofprojects.pdf" target="_blank" rel="noopener noreferrer" className="text-[#a3a3a3] transition-[color] duration-[0.3s] hover:text-white w-fit">
             List of Final Year Projects
           </a>
           
         </div>
-        <div className="flex flex-col w-full sm:w-1/2 md:w-1/3 mb-4">
+        <div className="flex flex-col sm:w-1/4 mb-4">
           <div className="my-3">
             Explore
           </div>
@@ -64,7 +64,8 @@ function Footer() {
             CS-Cup Points Table
           </a>
         </div>
-      </div>
+        </div>
+   
     </div>
   );
 }
