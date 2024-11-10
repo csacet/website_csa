@@ -6,6 +6,7 @@ import landingImg1 from '../app/assets/images/landingImg1.svg';
 import landingImg2 from '../app/assets/images/landingImg2.svg';
 import landingImg3 from "../app/assets/images/mainpage2.jpg";
 import { useState, useEffect } from 'react';
+import ImageCarousel from "@/ui/ImageCarousel";
 type landingPageContent = {
     cet_overview: string;
     cse_overview: string;
@@ -14,6 +15,7 @@ type landingPageContent = {
   export default function Landing() {
     const [currentImage, setCurrentImage] = useState(0);
     const images = [ sampleDepartmentImage];
+    const imagesurl = [landingImg1, landingImg2, sampleDepartmentImage, landingImg3, landingImg1, landingImg2, sampleDepartmentImage, landingImg3];
     const [data, setData] = useState<landingPageContent>({
       cet_overview: "",
       cse_overview: "",
@@ -41,7 +43,7 @@ type landingPageContent = {
     };
 
     return (
-        <div className="font-primary overflow-x-hidden">
+        <div className="font-primary overflow-x-hidden pt-20 lg:pt-28 xl:pt-32 ">
             <div className="relative mt-[1.125rem] mx-[2.03125rem] h-[400px] md:h-[580px] text-white">
             <div className="relative w-full h-full rounded-[1.25rem] overflow-hidden">
   {/* Background Image */}
@@ -82,15 +84,22 @@ type landingPageContent = {
             </div>
             <div className="mx-[2.03125rem] mt-[1.875rem] flex flex-col lg:flex-row bg-[#F4F4F4]  md:px-15 py-[2rem] md:py-[3.3125rem] rounded-[1.25rem] space-y-4 md:space-x-6 items-center">
             <h2  className="block lg:hidden font-bold  text-2xl sm:text-4xl  pb-5 ">College of Engineering Trivandrum </h2>
-                <Image src={landingImg3} alt="College of Engineering Trivandrum" className="lg:hidden rounded-md w-full md:w-2/3 lg:w-1/2 xl:w-1/2 pr-3" />
+                <Image src={landingImg3} alt="College of Engineering Trivandrum" className="lg:hidden rounded-lg w-full md:w-2/3 lg:w-1/2 xl:w-1/2 px-3" />
                 <div className="flex flex-col md:px-16 xl:px-20 items-center md:items-start">
                     <h2  className="hidden lg:block font-bold  text-2xl md:text-4xl  xl:text-5xl">College of Engineering Trivandrum</h2>
                     <p className="px-5 md:px-0 font-normal md:text-lg xl:text-xl mt-[2.5rem]">
                     {data.cet_overview}
                     </p>
                 </div>
-                <Image src={landingImg3} alt="College of Engineering Trivandrum" className="hidden lg:block rounded-md w-full md:w-2/3 lg:w-1/2 xl:w-1/2 pr-2" />
+                <Image src={landingImg3} alt="College of Engineering Trivandrum" className="hidden lg:block rounded-md w-full md:w-2/3 lg:w-1/2 xl:w-1/2 px-3" />
             </div>
+            
+            <div className="flex flex-col my-[1.875rem] items-center justify-between">
+            <h2  className="block font-bold  text-2xl sm:text-4xl  pb-5 ">  Latest </h2>
+            <ImageCarousel images={imagesurl}/>
+                
+            </div>
+            
             
 
             <div className="flex flex-col my-[1.875rem] items-center justify-between mx-[2.03125rem] bg-[#2C2C2C]  rounded-lg shadow-lg px-min">

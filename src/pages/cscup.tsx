@@ -46,7 +46,7 @@ export default function CsCup() {
    
       <div className="font-primary">
       <Navbar />
-      <div className="font-primary  md:mx-[2.03125rem] mt-[1.875rem] flex flex-col px-1  md:px-[4.875rem] md:py-[3.3125rem] rounded-[1.25rem] items-center">
+      <div className="font-primary  md:mx-[2.03125rem] mt-[1.875rem] flex flex-col px-1  md:px-[4.875rem] md:py-[3.3125rem] rounded-[1.25rem] items-center pt-20 lg:pt-28 xl:pt-32 ">
   {/* Full-width image at the top */}
   <Image
     src={landingImg}

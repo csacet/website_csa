@@ -12,9 +12,9 @@ export default function Navbar() {
     };
 
     return (
-        <div className=" flex flex-col lg:flex-row bg-[#1A1A1A] text-white text-lg  lg:h-[6.375rem] h-fit p-5 font-primary items-center">
+        <div className="flex flex-col lg:flex-row bg-[#1A1A1A] text-white text-lg lg:h-[6.375rem] h-fit p-5 font-primary items-center w-full  top-0 fixed z-50 ">
             {/* Large screen nav items */}
-            <div className="hidden lg:flex flex-row justify-between w-full">
+            <div className="hidden lg:flex flex-row justify-between w-full py-10">
                 <div className="flex flex-row ml-[7.018125rem] space-x-[5rem] items-center">
                     <Link href="/achievements"><div className="cursor-pointer hover:text-[#FFE53B]">Achievements</div></Link>
                     <Link href="/events"><div className="cursor-pointer hover:text-[#FFE53B]">Events</div></Link>

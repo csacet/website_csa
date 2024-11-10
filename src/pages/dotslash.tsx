@@ -46,7 +46,7 @@ export default function Dotslash() {
    
       <div className="font-primary">
       <Navbar />
-      <div className="font-primary  md:mx-[2.03125rem] mt-[1.875rem] flex flex-col px-1  md:px-[4.875rem] md:py-[3.3125rem] rounded-[1.25rem] items-center">
+      <div className="font-primary  md:mx-[2.03125rem] mt-[1.875rem] flex flex-col px-1  md:px-[4.875rem] md:py-[3.3125rem] rounded-[1.25rem] items-center pt-20 lg:pt-28 xl:pt-32 ">
   {/* Full-width image at the top */}
   <Image
     src={landingImg}
@@ -56,7 +56,7 @@ export default function Dotslash() {
 
   {/* Centered text content below the image */}
   <div className="flex flex-col text-center max-w-6xl">
-  <div className="text-sm text-justify px-3 md:text-xl mt-[2.5rem] ">
+  <div className="text-sm sm:text-lg  text-justify px-5 md:text-xl mt-[2.5rem] ">
   {data.dotslash_one}
   
   <p className="leading-relaxed mt-4 text-center">
